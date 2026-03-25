@@ -1,71 +1,405 @@
 <!DOCTYPE html>
 <html lang="ta">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JANANAYAGAN | The Premium Cinema Experience</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="particles"></div>
     <div class="grid-bg"></div>
 
     <nav>
-       <a href="#" class="logo"><img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN" style="height: 50px; display: block;"></a>
-       <div class="nav-links">
-          <a href="#movies">About Movie</a>
-          <a href="#booking">Book Tickets</a>
-       </div>
+        <a href="#" class="logo"><img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png"
+                alt="JANANAYAGAN" style="height: 50px; display: block;"></a>
+        <div class="nav-links">
+            <a href="#movies">About Movie</a>
+            <a href="#booking">Book Tickets</a>
+        </div>
     </nav>
-    
+
     <section class="hero" id="home">
         <div class="video-background">
-            <iframe class="desktop-trailer" src="https://www.youtube.com/embed/fJaAYcERf3Y?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=fJaAYcERf3Y&modestbranding=1&playsinline=1" title="Jananayagan Movie Trailer" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <iframe class="mobile-trailer" src="https://www.youtube.com/embed/ubCfzDR4G_M?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=ubCfzDR4G_M&modestbranding=1&playsinline=1" title="Jananayagan Mobile Trailer" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="desktop-trailer"
+                src="https://www.youtube.com/embed/fJaAYcERf3Y?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=fJaAYcERf3Y&modestbranding=1&playsinline=1"
+                title="Jananayagan Movie Trailer" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class="mobile-trailer"
+                src="https://www.youtube.com/embed/ubCfzDR4G_M?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=ubCfzDR4G_M&modestbranding=1&playsinline=1"
+                title="Jananayagan Mobile Trailer" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN" style="max-width: 90vw; max-height: 250px; margin-bottom: 20px; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.9)); transform: rotateX(15deg); animation: float 5s ease-in-out infinite alternate;">
+            <img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN"
+                style="max-width: 90vw; max-height: 250px; margin-bottom: 20px; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.9)); transform: rotateX(15deg); animation: float 5s ease-in-out infinite alternate;">
             <h1 class="title-3d" style="display: none;">JANANAYAGAN</h1>
             <p class="tagline">"I'M COMING "</p>
             <p class="tamil-tagline">"என் நெஞ்சில் குடியிருக்கும்"</p>
-            
+
             <div class="timer">
                 <div class="time-box"><span id="days">08</span><label>Days</label></div>
                 <div class="time-box"><span id="hours">14</span><label>Hours</label></div>
                 <div class="time-box"><span id="mins">45</span><label>Mins</label></div>
                 <div class="time-box"><span id="secs">00</span><label>Secs</label></div>
             </div>
-            
+
             <a href="#booking" class="btn-primary">BOOK NOW</a>
         </div>
     </section>
 
+
+    <!-- Production Details Section -->
+    <section class="media-section fade-up" id="production" style="padding-top: 80px; padding-bottom: 20px;">
+        <div style="margin-bottom: 40px;">
+            <div style="display: inline-block; color: var(--gold); border: 1px solid rgba(212,175,55,0.4); padding: 8px 15px; font-family: var(--font-cond); letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 15px;">Film Info</div>
+            <h2 class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 15px; font-family: var(--font-hero); font-size: 3.5rem;">Production <span style="color: var(--gold);">Details</span></h2>
+            <div style="width: 100px; height: 2px; background: linear-gradient(to right, var(--gold), transparent);"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px;">
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">🎬</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Director</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">H. Vinoth</div>
+                </div>
+            </div>
+            
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">🎵</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Music</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">Anirudh Ravichander</div>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">🎥</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Production</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">KVN Productions</div>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">📅</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Release</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">Sept 1, 2026</div>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">🌍</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Languages</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">Tamil</div>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; color: #ffd700; filter: drop-shadow(0 0 5px rgba(255,215,0,0.5));">⭐</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Genre</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">Political Action Drama</div>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">🔭</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Cinematography</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">Sathyan Sooryan</div>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 25px 30px; display: flex; align-items: center; gap: 25px; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-3px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                <div style="font-size: 2.5rem; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">✂️</div>
+                <div>
+                    <div style="color: var(--gold); font-family: var(--font-cond); letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; margin-bottom: 5px; font-weight: 600;">Editing</div>
+                    <div style="color: white; font-weight: 600; font-size: 1.4rem;">Pradeep E. Ragav</div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- Cast Section -->
+    <section class="media-section fade-up" id="cast" style="padding-top: 80px; padding-bottom: 80px;">
+        <div style="margin-bottom: 50px;">
+            <h2 class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 20px; font-family: var(--font-hero); font-size: 3.5rem;">The <span style="color: var(--gold);">Cast</span></h2>
+            <div style="width: 100px; height: 2px; background: linear-gradient(to right, var(--gold), transparent);"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Vijay_at_Protest_of_the_Nadigar_Sangam.jpg/500px-Vijay_at_Protest_of_the_Nadigar_Sangam.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Vijay</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">IPS THALAPATHY VETRI KONDAN</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Chandrasekaran Joseph Vijay (born 22 June 1974) is an Indian actor and politicia...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mamitha2024.jpg/500px-Mamitha2024.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Mamitha Baiju</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">VIJI SRIKANTH</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Mamitha Baiju (born 22 June 2001) is an Indian actress who primarily works in Ma...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pooja_Hegde_at_Beast_Telugu_press_meet_%281%29.jpg/500px-Pooja_Hegde_at_Beast_Telugu_press_meet_%281%29.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Pooja Hegde</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">KAYAL</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Pooja Hegde (; born 13 October 1990) is an Indian actress who primarily works in...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/01/Lord_Bobby_2024.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Bobby Deol</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Vijay Singh "Bobby" Deol (born 27 January 1969) is an Indian actor who primarily...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Monisha_Blessy.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Monisha Blessy</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Monisha Blessy is an Indian actress who works in Tamil films and television. She...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Anirudh_Ravichander_at_Audi_Ritz_Style_Awards_2017_%28cropped%29.jpg/500px-Anirudh_Ravichander_at_Audi_Ritz_Style_Awards_2017_%28cropped%29.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Anirudh Ravichander</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Anirudh Ravichander (born 16 October 1990), also credited mononymously as Anirud...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/20/Priyamani_at_Filmfare_Awards_South_%28cropped%29.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Priyamani</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Priyamani Raj (née Iyer; born 4 June 1984), known mononymously as Priyamani, is ...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1d/Atlee_in_2024.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Atlee Kumar</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Arun Kumar (born 21 September 1986), known professionally as Atlee, is an Indian...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Prakash_Raj_at_KLF_18_kozhikode.jpg/500px-Prakash_Raj_at_KLF_18_kozhikode.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Prakash Raj</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Prakash Raj (born Prakash Rai; 26 March 1965) is an Indian actor, film director,...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%28cropped%29.jpg/500px-Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%28cropped%29.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Gautham Vasudev Menon</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SRIKANTH</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Gautham Vasudev Menon (born 25 February 1973) is an Indian film director, screen...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Shruti_Haasan_at_the_special_screening_of_the_short_film_Devi_%2832%29.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Shruti Haasan</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Shruti Rajalakshmi Haasan (born 28 January 1986) is an Indian actress and singer...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('teejay.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Teejay Arunasalam</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Teejay Arunasalam is British playback singer and actor who has worked in Indian ...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Nelson_Dilipkumar.png'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Nelson Dilipkumar</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Nelson Dilipkumar ( born 21 June 1984) is an Indian director and screenwriter wh...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Actor_Nizhalgal_Ravi_at_Ponniyin_Selvan_2D_Movie_Press_Meet_%28cropped%29.jpg/500px-Actor_Nizhalgal_Ravi_at_Ponniyin_Selvan_2D_Movie_Press_Meet_%28cropped%29.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Nizhalgal Ravi</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Ravichandran Samanna (born 16 April 1956), known professionally as Nizhalgal Rav...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Narain_Actor.jpg/500px-Narain_Actor.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Narain</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">AI HUMANOID SCIENTIST</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Sunil Kumar, known by his stage name Narain, is an Indian actor, who works in Ma...</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; ">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-image: url('baba.jpg'); background-size: cover; background-position: center; border-color: transparent;">
+                        
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Baba Baskar</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A renowned actor.</p>
+            </div>
+
+            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
+                
+                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; border: 2px solid var(--gold);">
+                    <div style="width: 100%; height: 100%; border-radius: 50%; background-color: transparent; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--gold); font-family: var(--font-hero);">
+                        JD
+                    </div>
+                </div>
+                
+                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Jaydeep Dabgar</h3>
+                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A renowned actor.</p>
+            </div>
+
+        </div>
+    </section>
+
     <!-- About Movie Section -->
     <section class="now-showing fade-up" id="movies">
         <h2 class="section-title">The <span>Epic</span></h2>
         <div class="movie-grid" style="display: flex; justify-content: center;">
-            
-            <div class="movie-card about-card" style="width: 100%; background: rgba(18,18,26,0.8); border: 1px solid rgba(212,175,55,0.3); border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.9); overflow: hidden; display: flex;">
-                
-                <div class="movie-poster about-poster" style="padding: 0; border: none; background: #000; position: relative; overflow: hidden;">
-                    <img loading="lazy" src="https://i.ibb.co/zVjF2tqD/MV5-BOTE1-M2-Zk-Zj-Yt-Nz-Ex-Ni00-MTQw-LTg3-ZDYt-YTA3-Ym-Qy-MDgy-Zj-U4-Xk-Ey-Xk-Fqc-Gc-V1.jpg" alt="JANA NAYAGAN" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1;">
+
+            <div class="movie-card about-card"
+                style="width: 100%; background: rgba(18,18,26,0.8); border: 1px solid rgba(212,175,55,0.3); border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.9); overflow: hidden; display: flex;">
+
+                <div class="movie-poster about-poster"
+                    style="padding: 0; border: none; background: #000; position: relative; overflow: hidden;">
+                    <img loading="lazy"
+                        src="https://i.ibb.co/zVjF2tqD/MV5-BOTE1-M2-Zk-Zj-Yt-Nz-Ex-Ni00-MTQw-LTg3-ZDYt-YTA3-Ym-Qy-MDgy-Zj-U4-Xk-Ey-Xk-Fqc-Gc-V1.jpg"
+                        alt="JANA NAYAGAN"
+                        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1;">
                     <div class="glare" style="z-index: 2;"></div>
                 </div>
-                
-                <div class="about-info" style="position: relative; z-index: 4; background: linear-gradient(to right, rgba(10,10,15,1) 0%, rgba(10,10,15,0.8) 100%);">
-                    <span class="movie-rating" style="width: max-content; margin-bottom: 20px; padding: 6px 15px; font-size: 1rem;">U/A</span>
-                    <h3 class="movie-title" style="font-size: 3.5rem; margin-bottom: 10px; line-height: 1;">Jana nayagan</h3>
-                    <p class="movie-genre" style="font-size: 1.1rem; margin-bottom: 25px; letter-spacing: 2px;">Tamil • Mass Action Drama</p>
-                    <p style="font-size: 1.2rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 40px; font-family: var(--font-body);">Jana nayagan is a powerful Tamil mass action drama that explores the rise of a fearless leader who stands against injustice and corruption. Packed with intense action, emotional depth, and striking visuals, the film delivers a gripping story of power, sacrifice, and legacy that resonates with the spirit of the people.</p>
-                    <button class="btn-primary" style="font-size: 1.3rem; padding: 15px 40px; align-self: flex-start; margin: 0; border: none;" onclick="document.getElementById('booking').scrollIntoView()">Book Tickets Now</button>
+
+                <div class="about-info"
+                    style="position: relative; z-index: 4; background: linear-gradient(to right, rgba(10,10,15,1) 0%, rgba(10,10,15,0.8) 100%);">
+                    <span class="movie-rating"
+                        style="width: max-content; margin-bottom: 20px; padding: 6px 15px; font-size: 1rem;">U/A</span>
+                    <h3 class="movie-title" style="font-size: 3.5rem; margin-bottom: 10px; line-height: 1;">Jana nayagan
+                    </h3>
+                    <p class="movie-genre" style="font-size: 1.1rem; margin-bottom: 25px; letter-spacing: 2px;">Tamil •
+                        Mass Action Drama</p>
+                    <p
+                        style="font-size: 1.2rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 40px; font-family: var(--font-body);">
+                        Jana nayagan is a powerful Tamil mass action drama that explores the rise of a fearless leader
+                        who stands against injustice and corruption. Packed with intense action, emotional depth, and
+                        striking visuals, the film delivers a gripping story of power, sacrifice, and legacy that
+                        resonates with the spirit of the people.</p>
+                    <button class="btn-primary"
+                        style="font-size: 1.3rem; padding: 15px 40px; align-self: flex-start; margin: 0; border: none;"
+                        onclick="document.getElementById('booking').scrollIntoView()">Book Tickets Now</button>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -74,11 +408,15 @@
         <h2 class="section-title">Official <span>Promos</span></h2>
         <div class="video-grid">
             <div class="video-wrapper">
-                <iframe loading="lazy" src="https://www.youtube.com/embed/fJaAYcERf3Y?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=fJaAYcERf3Y" title="Trailer" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe loading="lazy"
+                    src="https://www.youtube.com/embed/fJaAYcERf3Y?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=fJaAYcERf3Y"
+                    title="Trailer" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 <div class="video-label">OFFICIAL TRAILER</div>
             </div>
             <div class="video-wrapper">
-                <iframe loading="lazy" src="https://www.youtube.com/embed/MKUDHKf_pkg?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=MKUDHKf_pkg" title="Teaser" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe loading="lazy"
+                    src="https://www.youtube.com/embed/MKUDHKf_pkg?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=MKUDHKf_pkg"
+                    title="Teaser" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 <div class="video-label">OFFICIAL TEASER</div>
             </div>
         </div>
@@ -91,20 +429,37 @@
             <button class="nav-arrow left" onclick="scrollSection(this, -400)">&#10094;</button>
             <div class="scroll-container">
                 <div class="song-card">
-                    <iframe loading="lazy" src="https://player.vimeo.com/video/1175827586?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Song 1"></iframe>
+                    <iframe loading="lazy"
+                        src="https://player.vimeo.com/video/1175827586?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" title="Song 1"></iframe>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
                 <div class="song-card">
-                    <iframe loading="lazy" src="https://player.vimeo.com/video/1175828365?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Jana_Nayagan_Thalapathy_Kacheri_Lyric_Video_Thalapathy_Vijay_H_Vinoth_Anirudh_Pooja_Hegde_KVN_1440p"></iframe>
-                    
+                    <iframe loading="lazy"
+                        src="https://player.vimeo.com/video/1175828365?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        title="Jana_Nayagan_Thalapathy_Kacheri_Lyric_Video_Thalapathy_Vijay_H_Vinoth_Anirudh_Pooja_Hegde_KVN_1440p"></iframe>
+
                 </div>
                 <div class="song-card">
-                    <iframe loading="lazy" src="https://player.vimeo.com/video/1175828062?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Song 3"></iframe>
-                    
+                    <iframe loading="lazy"
+                        src="https://player.vimeo.com/video/1175828062?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" title="Song 3"></iframe>
+
                 </div>
                 <div class="song-card">
-                    <iframe loading="lazy" src="https://player.vimeo.com/video/1175828166?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Song 4"></iframe>
-                    
+                    <iframe loading="lazy"
+                        src="https://player.vimeo.com/video/1175828166?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" title="Song 4"></iframe>
+
                 </div>
             </div>
             <button class="nav-arrow right" onclick="scrollSection(this, 400)">&#10095;</button>
@@ -114,7 +469,7 @@
     <!-- Booking Section -->
     <section class="booking-section fade-up" id="booking">
         <h2 class="section-title">Select <span>Show</span></h2>
-        
+
         <div class="glass-panel">
             <div class="selectors">
                 <div class="selector-group">
@@ -146,7 +501,7 @@
                         <button class="nav-arrow right" onclick="scrollSection(this, 200)">&#10095;</button>
                     </div>
                 </div>
-                
+
                 <div class="selector-group">
                     <h3>Select Time</h3>
                     <div class="scroll-wrapper">
@@ -171,20 +526,33 @@
                     <!-- Set via JS -->
                 </div>
             </div>
-            
+
             <div class="legend">
-                <div class="legend-item"><div class="legend-seat" style="background: #2A2A35; box-shadow: 0 4px 0 #111;"></div> Available</div>
-                <div class="legend-item"><div class="legend-seat" style="background: var(--gold); box-shadow: 0 4px 0 var(--gold-dark), 0 0 15px var(--glow-gold);"></div> Selected</div>
-                <div class="legend-item"><div class="legend-seat" style="background: var(--crimson); opacity: 0.6; box-shadow: 0 4px 0 #5e000e;"></div> Booked</div>
+                <div class="legend-item">
+                    <div class="legend-seat" style="background: #2A2A35; box-shadow: 0 4px 0 #111;"></div> Available
+                </div>
+                <div class="legend-item">
+                    <div class="legend-seat"
+                        style="background: var(--gold); box-shadow: 0 4px 0 var(--gold-dark), 0 0 15px var(--glow-gold);">
+                    </div> Selected
+                </div>
+                <div class="legend-item">
+                    <div class="legend-seat"
+                        style="background: var(--crimson); opacity: 0.6; box-shadow: 0 4px 0 #5e000e;"></div> Booked
+                </div>
             </div>
 
             <!-- Booking Summary Ticket -->
             <div class="booking-summary-wrapper fade-up">
                 <div class="ticket">
                     <div class="ticket-left">
-                        <div class="ticket-movie"><img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN" style="height: 40px; margin-bottom: 5px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));"></div>
+                        <div class="ticket-movie"><img
+                                src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png"
+                                alt="JANANAYAGAN"
+                                style="height: 40px; margin-bottom: 5px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));">
+                        </div>
                         <div class="ticket-info">Tamil / 2D / <span id="summary-time">02:15 PM</span></div>
-                        
+
                         <div class="ticket-details">
                             <div class="detail-item">
                                 <label>Date</label>
@@ -203,7 +571,9 @@
                     <div class="ticket-right">
                         <div class="qr-code"></div>
                         <div style="text-align: center;">
-                            <label style="color:#aaa; font-size:0.8rem; text-transform:uppercase; letter-spacing: 2px;">Total Amount</label>
+                            <label
+                                style="color:#aaa; font-size:0.8rem; text-transform:uppercase; letter-spacing: 2px;">Total
+                                Amount</label>
                             <div class="total-price" id="total-price">₹0</div>
                             <button class="btn-confirm" onclick="processPayment()">PAY NOW</button>
                         </div>
@@ -217,24 +587,40 @@
 
     <!-- Developer Section -->
     <section class="media-section fade-up" id="developer" style="padding-top: 40px; padding-bottom: 80px;">
-        <div class="developer-card glass-panel" style="display: flex; flex-direction: row; gap: 0; padding: 0; overflow: hidden; margin-top: 30px;">
-            
-            <div class="dev-image" style="flex: 0 0 35%; background: url('https://i.ibb.co/NnyYFhzj/Vn4-LQy-K9q-Nlfx-IRD-jpg.jpg') no-repeat center center / cover; min-height: 500px; position: relative;">
-                <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px 30px 20px; background: linear-gradient(to top, rgba(10,10,15,1) 10%, transparent);">
-                    <h3 style="font-family: var(--font-cond); font-size: 2.8rem; color: var(--gold); letter-spacing: 2px; margin: 0; text-shadow: 0 5px 15px rgba(0,0,0,0.9);">SRIKANTH J</h3>
-                    <p style="color: #fff; font-size: 1.1rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 5px;">Creator & Digital Strategist</p>
+        <div class="developer-card glass-panel"
+            style="display: flex; flex-direction: row; gap: 0; padding: 0; overflow: hidden; margin-top: 30px;">
+
+            <div class="dev-image"
+                style="flex: 0 0 35%; background: url('https://i.ibb.co/NnyYFhzj/Vn4-LQy-K9q-Nlfx-IRD-jpg.jpg') no-repeat center center / cover; min-height: 500px; position: relative;">
+                <div
+                    style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px 30px 20px; background: linear-gradient(to top, rgba(10,10,15,1) 10%, transparent);">
+                    <h3
+                        style="font-family: var(--font-cond); font-size: 2.8rem; color: var(--gold); letter-spacing: 2px; margin: 0; text-shadow: 0 5px 15px rgba(0,0,0,0.9);">
+                        SRIKANTH J</h3>
+                    <p
+                        style="color: #fff; font-size: 1.1rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 5px;">
+                        Creator & Digital Strategist</p>
                 </div>
             </div>
-            
+
             <div class="dev-content" style="flex: 1; padding: 50px; text-align: left; background: rgba(18,18,26,0.5);">
-                <h2 style="font-family: var(--font-cond); font-size: 2.2rem; color: #fff; margin-bottom: 20px; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 10px; display: inline-block;">🔥 About Me</h2>
+                <h2
+                    style="font-family: var(--font-cond); font-size: 2.2rem; color: #fff; margin-bottom: 20px; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 10px; display: inline-block;">
+                    🔥 About Me</h2>
                 <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 35px;">
-                    Hi, I’m <strong>Srikanth J</strong> — a creator, entrepreneur, and digital strategist focused on building impactful digital experiences. I specialize in branding, web development, and content strategy, helping businesses transform their ideas into strong and scalable online identities. With hands-on experience working with 50+ brands, I understand what it takes to create something that not only looks great — but performs.
+                    Hi, I’m <strong>Srikanth J</strong> — a creator, entrepreneur, and digital strategist focused on
+                    building impactful digital experiences. I specialize in branding, web development, and content
+                    strategy, helping businesses transform their ideas into strong and scalable online identities. With
+                    hands-on experience working with 50+ brands, I understand what it takes to create something that not
+                    only looks great — but performs.
                 </p>
 
-                <div class="dev-skills-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
+                <div class="dev-skills-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
                     <div>
-                        <h4 style="color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: var(--font-cond); letter-spacing: 1px;">🚀 What I Do</h4>
+                        <h4
+                            style="color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: var(--font-cond); letter-spacing: 1px;">
+                            🚀 What I Do</h4>
                         <ul style="color: var(--text-muted); line-height: 1.8; padding-left: 20px; font-size: 1.05rem;">
                             <li style="margin-bottom: 8px;">Design and develop modern websites</li>
                             <li style="margin-bottom: 8px;">Create engaging content strategies</li>
@@ -243,7 +629,9 @@
                         </ul>
                     </div>
                     <div>
-                        <h4 style="color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: var(--font-cond); letter-spacing: 1px;">🎯 Why Work With Me?</h4>
+                        <h4
+                            style="color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: var(--font-cond); letter-spacing: 1px;">
+                            🎯 Why Work With Me?</h4>
                         <ul style="color: var(--text-muted); line-height: 1.8; padding-left: 20px; font-size: 1.05rem;">
                             <li style="margin-bottom: 8px;">Experience with 50+ brands</li>
                             <li style="margin-bottom: 8px;">Strong digital growth strategies</li>
@@ -253,22 +641,36 @@
                     </div>
                 </div>
 
-                <div style="background: rgba(10,10,15,0.8); border: 1px dashed rgba(212,175,55,0.4); padding: 25px; border-radius: 15px; margin-bottom: 35px; position: relative;">
+                <div
+                    style="background: rgba(10,10,15,0.8); border: 1px dashed rgba(212,175,55,0.4); padding: 25px; border-radius: 15px; margin-bottom: 35px; position: relative;">
                     <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">💡 My Mission</h4>
-                    <p style="color: var(--text-primary); font-style: italic; font-size: 1.1rem; line-height: 1.6;">"My goal is simple: To help businesses go from invisible → unforgettable. I focus on delivering strategies and designs that drive real results, not just aesthetics."</p>
+                    <p style="color: var(--text-primary); font-style: italic; font-size: 1.1rem; line-height: 1.6;">"My
+                        goal is simple: To help businesses go from invisible → unforgettable. I focus on delivering
+                        strategies and designs that drive real results, not just aesthetics."</p>
                 </div>
 
                 <div style="margin-bottom: 40px;">
-                    <h4 style="color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: var(--font-cond); letter-spacing: 1px;">🧠 My Journey</h4>
+                    <h4
+                        style="color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: var(--font-cond); letter-spacing: 1px;">
+                        🧠 My Journey</h4>
                     <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem;">
-                        I started with a passion for design and digital creation, and turned it into a results-driven career. Over time, I’ve worked with hundreds of brands and built my own platforms, gaining practical experience that directly translates into business growth.
+                        I started with a passion for design and digital creation, and turned it into a results-driven
+                        career. Over time, I’ve worked with hundreds of brands and built my own platforms, gaining
+                        practical experience that directly translates into business growth.
                     </p>
                 </div>
 
-                <h4 style="color: var(--gold); font-size: 1.4rem; margin-bottom: 20px; font-family: var(--font-cond); letter-spacing: 1px;">📩 Let’s Connect</h4>
+                <h4
+                    style="color: var(--gold); font-size: 1.4rem; margin-bottom: 20px; font-family: var(--font-cond); letter-spacing: 1px;">
+                    📩 Let’s Connect</h4>
                 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                    <a href="mailto:warspex@gmail.com" class="btn-primary" style="padding: 12px 25px; font-size: 1.1rem; border-radius: 8px; text-decoration: none; color: var(--bg-dark);"><span style="margin-right:8px;">✉</span> warspex@gmail.com</a>
-                    <a href="https://www.instagram.com/srikanth.unfitted?igsh=MWo2MzI1MnNmZHBrNg==" target="_blank" class="btn-primary" style="background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 12px 25px; font-size: 1.1rem; border-radius: 8px; text-decoration: none; box-shadow: none;"><span style="margin-right:8px;">📸</span> Instagram</a>
+                    <a href="mailto:warspex@gmail.com" class="btn-primary"
+                        style="padding: 12px 25px; font-size: 1.1rem; border-radius: 8px; text-decoration: none; color: var(--bg-dark);"><span
+                            style="margin-right:8px;">✉</span> warspex@gmail.com</a>
+                    <a href="https://www.instagram.com/srikanth.unfitted?igsh=MWo2MzI1MnNmZHBrNg==" target="_blank"
+                        class="btn-primary"
+                        style="background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 12px 25px; font-size: 1.1rem; border-radius: 8px; text-decoration: none; box-shadow: none;"><span
+                            style="margin-right:8px;">📸</span> Instagram</a>
                 </div>
             </div>
         </div>
@@ -276,18 +678,22 @@
 
     <footer>
         <div class="footer-logo">
-            <img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN" style="height: 60px; filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));">
+            <img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN"
+                style="height: 60px; filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));">
         </div>
-        <div class="footer-note">* Tamil Nadu Show Times Note: All shows follow state govt regulations. Mandatory convenient fees apply.</div>
+        <div class="footer-note">* Tamil Nadu Show Times Note: All shows follow state govt regulations. Mandatory
+            convenient fees apply.</div>
         <div class="social-links">
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
             <a href="#">Facebook</a>
             <a href="#">Support</a>
         </div>
-        <p class="copyright">&copy; 2026 Jananayagan Cinematic Universe. Developed by Srikanth J. All Rights Reserved.</p>
+        <p class="copyright">&copy; 2026 Jananayagan Cinematic Universe. Developed by Srikanth J. All Rights Reserved.
+        </p>
     </footer>
 
     <script src="script.js" defer></script>
 </body>
+
 </html>

@@ -13,7 +13,7 @@
         // Countdown Timer
         function updateTimer() {
             const now = new Date();
-            const launchDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 8, 14, 15, 0);
+            const launchDate = new Date(2026, 8, 1, 0, 0, 0); // September 1, 2026
             const diff = launchDate - now;
             
             if (diff > 0) {
