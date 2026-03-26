@@ -68,7 +68,7 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: 0, rootMargin: '0px 0px -100px 0px' });
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 

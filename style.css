@@ -45,6 +45,7 @@
             border-radius: 50%;
             box-shadow: 0 0 10px var(--gold);
             animation: rise linear infinite;
+            will-change: transform, opacity;
         }
         @keyframes rise {
             0% { transform: translateY(0) scale(1); opacity: 0; }
@@ -1115,7 +1116,8 @@
         @media (max-width: 768px) {
             .video-background iframe { transform: scale(1.1); }
             nav { padding: 14px 20px; }
-            .nav-links { display: none; }
+            .nav-links { gap: 15px; }
+            .nav-links a { font-size: 0.9rem; }
             .logo img { height: 38px !important; }
             .hero-content img { max-height: 160px !important; }
             .title-3d { font-size: 13vw; }
@@ -1163,7 +1165,7 @@
         /* Mobile Phones (max 480px) */
         @media (max-width: 480px) {
             .video-background iframe { transform: scale(1.1); }
-            nav { padding: 12px 15px; }
+            nav { padding: 12px 15px; flex-wrap: wrap; justify-content: center; gap: 10px; }
             .logo img { height: 32px !important; }
             .hero-content img { max-height: 120px !important; margin-bottom: 10px !important; }
             .tagline { font-size: 1.8rem; letter-spacing: 2px; }
@@ -1173,7 +1175,7 @@
             .time-box span { font-size: 1.6rem; }
             .time-box label { font-size: 0.65rem; margin-top: 4px; }
             .btn-primary { padding: 12px 28px; font-size: 1.2rem; letter-spacing: 2px; width: 100%; max-width: 280px; }
-            .section-title { font-size: 1.8rem; margin-bottom: 25px; }
+            .section-title { font-size: 28px; margin-bottom: 25px; }
             .now-showing, .booking-section { padding: 50px 12px; }
             .movie-card { width: 92vw; height: 380px; }
             .movie-title { font-size: 1.6rem; }

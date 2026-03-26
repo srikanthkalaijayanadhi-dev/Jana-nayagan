@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JANANAYAGAN | The Premium Cinema Experience</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -59,7 +61,7 @@
     <section class="media-section fade-up" id="production" style="padding-top: 80px; padding-bottom: 20px;">
         <div style="margin-bottom: 40px;">
             <div style="display: inline-block; color: var(--gold); border: 1px solid rgba(212,175,55,0.4); padding: 8px 15px; font-family: var(--font-cond); letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 15px;">Film Info</div>
-            <h2 class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 15px; font-family: var(--font-hero); font-size: 3.5rem;">Production <span style="color: var(--gold);">Details</span></h2>
+            <h2 class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 15px; font-family: var(--font-hero); font-size: clamp(28px, 5vw, 3.5rem);">Production <span style="color: var(--gold);">Details</span></h2>
             <div style="width: 100px; height: 2px; background: linear-gradient(to right, var(--gold), transparent);"></div>
         </div>
 
@@ -133,7 +135,7 @@
     <!-- Cast Section -->
     <section class="media-section fade-up" id="cast" style="padding-top: 80px; padding-bottom: 80px;">
         <div style="margin-bottom: 50px;">
-            <h2 class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 20px; font-family: var(--font-hero); font-size: 3.5rem;">The <span style="color: var(--gold);">Cast</span></h2>
+            <h2 class="section-title" style="text-align: left; margin-top: 0; margin-bottom: 20px; font-family: var(--font-hero); font-size: clamp(28px, 5vw, 3.5rem);">The <span style="color: var(--gold);">Cast</span></h2>
             <div style="width: 100px; height: 2px; background: linear-gradient(to right, var(--gold), transparent);"></div>
         </div>
 
@@ -347,18 +349,6 @@
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A renowned actor.</p>
             </div>
 
-            <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
-                
-                <div style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); position: relative; border: 2px solid var(--gold);">
-                    <div style="width: 100%; height: 100%; border-radius: 50%; background-color: transparent; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--gold); font-family: var(--font-hero);">
-                        JD
-                    </div>
-                </div>
-                
-                <h3 style="color: white; font-family: var(--font-cond); font-size: 1.8rem; margin: 0 0 5px 0; letter-spacing: 1px;">Jaydeep Dabgar</h3>
-                <h4 style="color: var(--gold); font-family: var(--font-cond); font-size: 1rem; margin: 0 0 20px 0; letter-spacing: 2px; font-weight: 500;">SUPPORTING ROLE</h4>
-                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A renowned actor.</p>
-            </div>
 
         </div>
     </section>
@@ -384,7 +374,7 @@
                     style="position: relative; z-index: 4; background: linear-gradient(to right, rgba(10,10,15,1) 0%, rgba(10,10,15,0.8) 100%);">
                     <span class="movie-rating"
                         style="width: max-content; margin-bottom: 20px; padding: 6px 15px; font-size: 1rem;">U/A</span>
-                    <h3 class="movie-title" style="font-size: 3.5rem; margin-bottom: 10px; line-height: 1;">Jana nayagan
+                    <h3 class="movie-title" style="font-size: clamp(1.5rem, 5vw, 3.5rem); margin-bottom: 10px; line-height: 1;">Jana nayagan
                     </h3>
                     <p class="movie-genre" style="font-size: 1.1rem; margin-bottom: 25px; letter-spacing: 2px;">Tamil •
                         Mass Action Drama</p>
@@ -546,7 +536,7 @@
             <div class="booking-summary-wrapper fade-up">
                 <div class="ticket">
                     <div class="ticket-left">
-                        <div class="ticket-movie"><img
+                        <div class="ticket-movie"><img loading="lazy"
                                 src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png"
                                 alt="JANANAYAGAN"
                                 style="height: 40px; margin-bottom: 5px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));">
@@ -595,7 +585,7 @@
                 <div
                     style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 40px 30px 20px; background: linear-gradient(to top, rgba(10,10,15,1) 10%, transparent);">
                     <h3
-                        style="font-family: var(--font-cond); font-size: 2.8rem; color: var(--gold); letter-spacing: 2px; margin: 0; text-shadow: 0 5px 15px rgba(0,0,0,0.9);">
+                        style="font-family: var(--font-cond); font-size: clamp(1.2rem, 5vw, 2.8rem); color: var(--gold); letter-spacing: 2px; margin: 0; text-shadow: 0 5px 15px rgba(0,0,0,0.9);">
                         SRIKANTH J</h3>
                     <p
                         style="color: #fff; font-size: 1.1rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 5px;">
@@ -605,7 +595,7 @@
 
             <div class="dev-content" style="flex: 1; padding: 50px; text-align: left; background: rgba(18,18,26,0.5);">
                 <h2
-                    style="font-family: var(--font-cond); font-size: 2.2rem; color: #fff; margin-bottom: 20px; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 10px; display: inline-block;">
+                    style="font-family: var(--font-cond); font-size: clamp(1.6rem, 6vw, 2.2rem); color: #fff; margin-bottom: 20px; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 10px; display: inline-block;">
                     🔥 About Me</h2>
                 <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 35px;">
                     Hi, I’m <strong>Srikanth J</strong> — a creator, entrepreneur, and digital strategist focused on
@@ -678,7 +668,7 @@
 
     <footer>
         <div class="footer-logo">
-            <img src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN"
+            <img loading="lazy" src="https://i.ibb.co/bjqVq6sy/Chat-GPT-Image-Mar-21-2026-10-19-37-PM.png" alt="JANANAYAGAN"
                 style="height: 60px; filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));">
         </div>
         <div class="footer-note">* Tamil Nadu Show Times Note: All shows follow state govt regulations. Mandatory
