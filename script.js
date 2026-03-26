@@ -209,3 +209,42 @@
 
         // Initialize Map
         generateSeatMap();
+
+        // Infinite Scroll for Cast Section
+        const castContainer = document.getElementById('cast-scroll-container');
+        if (castContainer) {
+            const castCards = Array.from(castContainer.children);
+            castCards.forEach(card => {
+                const clone = card.cloneNode(true);
+                castContainer.appendChild(clone);
+            });
+
+            let isHoveringCast = false;
+            const castWrapper = castContainer.parentElement;
+            castWrapper.addEventListener('mouseenter', () => isHoveringCast = true);
+            castWrapper.addEventListener('mouseleave', () => isHoveringCast = false);
+            
+            function autoScrollCast() {
+                if (!isHoveringCast) {
+                    castContainer.scrollLeft += 1;
+                    if (castContainer.scrollLeft >= castContainer.scrollWidth / 2) {
+                        castContainer.scrollLeft = 0;
+                    }
+                }
+                requestAnimationFrame(autoScrollCast);
+            }
+            requestAnimationFrame(autoScrollCast);
+        }
+
+        function scrollCast(btn, amount) {
+            const container = document.getElementById('cast-scroll-container');
+            if (container) {
+                if (amount < 0 && container.scrollLeft < Math.abs(amount)) {
+                    container.scrollLeft += container.scrollWidth / 2;
+                }
+                if (amount > 0 && container.scrollLeft + amount >= container.scrollWidth / 2) {
+                    container.scrollLeft -= container.scrollWidth / 2;
+                }
+                container.scrollBy({ left: amount, behavior: 'smooth' });
+            }
+        }

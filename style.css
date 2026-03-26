@@ -1216,4 +1216,14 @@
             .about-card { flex-direction: column; }
             .about-poster { width: 100%; min-height: 250px; border-radius: 20px 20px 0 0; }
             .about-info { width: 100%; padding: 30px; text-align: center; align-items: center; }
+            #cast-scroll-container .cast-card { width: 260px; margin-right: 20px; }
         }
+
+        /* Cast Section Styling */
+        #cast-scroll-container .cast-card {
+            width: 300px;
+            flex-shrink: 0;
+            margin-right: 30px;
+            max-width: none;
+        }
+        

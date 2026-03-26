@@ -139,7 +139,9 @@
             <div style="width: 100px; height: 2px; background: linear-gradient(to right, var(--gold), transparent);"></div>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+        <div class="scroll-wrapper cast-scroll-wrapper" style="margin-top: 30px; position: relative; width: 100%; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);">
+            <button class="nav-arrow left" style="left: 20px; z-index: 20;" onclick="scrollCast(this, -400)">&#10094;</button>
+            <div class="scroll-container" id="cast-scroll-container" style="scroll-behavior: auto; scroll-snap-type: none; gap: 0;">
 
             <div class="glass-panel cast-card" style="padding: 40px 20px; text-align: center; border-radius: 12px; background: rgba(18,18,26,0.6); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border: 1px solid rgba(212,175,55,0.15); transition: 0.3s; display: flex; flex-direction: column; align-items: center;" onmouseover="this.style.borderColor='var(--gold)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='rgba(212,175,55,0.15)'; this.style.transform='translateY(0)';">
                 
@@ -349,7 +351,8 @@
                 <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">A renowned actor.</p>
             </div>
 
-
+            </div>
+            <button class="nav-arrow right" style="right: 20px; z-index: 20;" onclick="scrollCast(this, 400)">&#10095;</button>
         </div>
     </section>
 
